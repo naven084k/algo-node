@@ -1,11 +1,11 @@
-/*import Node from './Node.js';
-
-function findNthNodefromEndInLinkedList() {
-    var x = new Node(10);
-    console.log(x);
-}
-
-findNthNodefromEndInLinkedList();*/
-
 var x = require('./Node.js');
-console.log(x);
+
+let nthNode = process.argv[2];
+let head = x.prepareLinkedList();
+x.getSize(head);
+
+if(nthNode > head)
+   throw console.error('not valid input to enter');
+   
+x.printLinkedList(head);
+
