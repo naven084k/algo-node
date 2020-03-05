@@ -9,7 +9,7 @@
 module.exports.prepareLinkedList = function() {
     let node,temp;
 
-    for(let i = 0; i<10; i++){
+    for(let i = 1; i<=10; i++){
         if(!node){
             node = new Node(i);
             temp = node;
