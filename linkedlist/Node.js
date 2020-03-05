@@ -1,4 +1,4 @@
-export class Node {
+module.exports.Node = class Node {
 
     constructor(value){
         this.value = value;
@@ -6,6 +6,7 @@ export class Node {
     }
 }
 
-export function getLinkedList() {
+module.exports.getLinkedList = function() {
     let node = new Node(10);
+    console.log(node);
 }
