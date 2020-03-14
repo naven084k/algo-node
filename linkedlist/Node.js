@@ -6,15 +6,15 @@
     }
 }
 
-module.exports.prepareLinkedList = function() {
+module.exports.prepareLinkedList = function(arr) {
     let node,temp;
 
-    for(let i = 1; i<=10; i++){
+    for(let i = 0; i< arr.length; i++){
         if(!node){
-            node = new Node(i);
+            node = new Node(arr[i]);
             temp = node;
         } else {
-            temp.next = new Node(i);
+            temp.next = new Node(arr[i]);
             temp = temp.next;
         }
     }
@@ -40,4 +40,20 @@ module.exports.getSize = function(head) {
     }
 
    return cnt;
+}
+
+module.exports.getnthNode = function(head,n) {
+    let temp;
+    let cnt = 1;
+    while(head != null && cnt <= n){
+        cnt++;
+        head = head.next;
+
+        if(cnt == n){
+            console.log('printing the output node'+head.value);
+            temp = head;
+        }
+    }
+
+   return temp;
 }

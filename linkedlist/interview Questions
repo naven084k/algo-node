@@ -1,0 +1,16 @@
+1) system design on tinyURL
+    1) need traffic information
+    2) bandwidh requirements
+    3) storage
+    4) memory
+    5) db design
+    6) how do you shorten the URL
+    7) partitioning
+    8) consistent hashing
+    9) Offline data storage..
+    10) if two people are shortening the URL output of two should be different
+
+2) tortoise and hare problem
+    how moving tortoise and hare meet one step at time will find the starting point of the loop
+
+3) Find max length of connected 1's and 0's
