@@ -14,3 +14,4 @@
     how moving tortoise and hare meet one step at time will find the starting point of the loop
 
 3) Find max length of connected 1's and 0's
+4) generate all substrings of 1's and 0's of mentioned length.
